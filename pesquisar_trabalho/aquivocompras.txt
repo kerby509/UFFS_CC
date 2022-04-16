@@ -1,0 +1,5 @@
+caderno 7 5
+caneta 2 3
+notebook 8 70
+mesa 41 30
+TV 14 7
