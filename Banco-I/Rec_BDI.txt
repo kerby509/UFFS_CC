@@ -1,0 +1,15 @@
+﻿Nome: Kerby Lovince
+A) insert into filme(codf, titulo, anol, dur,codd)
+values(05, 'vandame',2008,104,109);
+
+B) cinema=# select titulo,anol from filme  where anol>1970;
+
+C)  cinema=# select * from pessoa where paisn='França';
+
+D) select * p.nome, f.titulo from pessoa p join elenco e on p.codp=e.codp join filme f on f.codf=e.codf where e.oscar='Y';
+
+E) LINE 1: SELECT f.titulo COUNT(*) FROM pessoa p GROUP BY  elenco;
+
+
+
+
