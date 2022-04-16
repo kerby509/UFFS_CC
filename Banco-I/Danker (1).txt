@@ -1,0 +1,5 @@
+﻿Nome arquivo:	danker-historico-atualizado
+
+Link gith:		https://github.com/kerby509/Projeto-ASS.git
+
+Acadêmicos:		Kerby Lovince & Daniel Pierrelus
