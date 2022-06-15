@@ -22,3 +22,11 @@ def gaussJacobi(A,b,maxiter,eps):
         else:
             sol = False
         break
+    
+     if (sol):
+        print("Iteração 0")
+        print("x = ",x)
+        xk = x.copy()
+   # maxiter = 10
+    #eps     = 0.01
+        iter    = 0
