@@ -5,3 +5,8 @@ def comparar(x,xk,eps):
   zip_object = zip(x, xk)
   for list1_i, list2_i in zip_object:
     soma = soma + math.fabs(list1_i-list2_i)
+    
+  if (soma < eps):
+        return True
+  else:
+     return False  
