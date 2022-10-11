@@ -14,5 +14,5 @@ int main() {
             v[i] = v[i - 1];
         }
     }
-    cout << a"\n";
+    cout << a;
 }
