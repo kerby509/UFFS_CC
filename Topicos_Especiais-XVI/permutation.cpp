@@ -13,3 +13,11 @@ int main(){
 	}
 	return 0;
 }
+
+
+
+// como 1 não tem adjacente, quer dizer q nao faz parte dos numeros que tem uma boa permutação, então cada vez que digita 1, vai retorna 1
+
+// caso n=2, ou n= 3 ou seja <4 o programa vai printar no solução , para ter uma boa permutação o numero 2 deveria pelo menos proximo do numero 3, más as vezes as adjacentes sempre tem diferença
+
+// descrecenta aq cada vez pq a diferença sempre 2 de todos os elemtos adjacentes, que um elemento tem nesses segmentos
