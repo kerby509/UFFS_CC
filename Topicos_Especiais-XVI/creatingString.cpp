@@ -12,3 +12,11 @@ void permute(string str, int l, int r, set<string> &lks){
         }
     }
 }
+
+int main() {
+    string s;
+    cin>> s ;
+    set <string> lks;
+    permute (s, 0, s.length() -1, lks);
+    cout<<lks.size ()<<"\n";
+}
