@@ -19,4 +19,9 @@ int main() {
     set <string> lks;
     permute (s, 0, s.length() -1, lks);
     cout<<lks.size ()<<"\n";
+
+    for ( auto x : lks) cout<<x<<"\n";
+    
+
+    return 0;
 }
