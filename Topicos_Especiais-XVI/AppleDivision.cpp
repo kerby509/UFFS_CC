@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
+ll totalSum =0;
+
 
 
 ll findMin(ll A[], int r, ll currSum){
@@ -10,10 +12,12 @@ ll findMin(ll A[], int r, ll currSum){
     //como tu tem uma soma atual e a soma atual for um constante , 
     //então o valor no conjunto séra a soma total- currsum
     if (r==0) // aqui precisamos calcular a diferenca entre conjunto 1 e o conjunto dois
-    return abs(totalSum -currSum);
+        return abs((totalSum -currSum)- currSum);
+// verifica a opção que vai dar o menor valor
+    return min(findMin(A,r-1 ,currSum+ A[r-1]), 
+    findMin(A,r-1,currSum));
 }
 
-ll totalSum =0;
 void resolve (){
     int n;
     cin >> n;
@@ -24,4 +28,8 @@ void resolve (){
         totalSum+= A[i];
     }
     cout<< findMin(A, n, 0)<<"\n";
+}
+
+int main (){
+    resolve();
 }
