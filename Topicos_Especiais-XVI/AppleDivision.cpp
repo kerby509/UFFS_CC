@@ -3,6 +3,7 @@ using namespace std;
 using ll = long long;
 ll totalSum =0;
 
+// usando a forma recursiva
 
 
 ll findMin(ll A[], int r, ll currSum){
