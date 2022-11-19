@@ -5,17 +5,19 @@ $$
 
 BEGIN
 
-if(SELECT eid FROM product ) <= ('0') THEN
-    DELETE FROM product WHERE eid=0;
+if NEW.eid = 0 THEN
+
+    DELETE eid from product WHERE eid = NEW.eid;
+
 
 END IF;
 
-if(SELECT quantity FROM stock) <=('0') THEN
-    DELETE FROM stock WHERE quantity =0;
+if NEW.quantity = 0 THEN
+    DELETE FROM stock WHERE quantity = NEW.quantity ;
 
 END IF;
 
-RETURN NULL;
+ RETURN NEW;
 
 
 	
@@ -23,4 +25,7 @@ END;
 $$ 
 
 LANGUAGE plpgsql;
+
+CREATE TRIGGER apaga_Product AFTER UPDATE ON stock 
+    FOR EACH ROW EXECUTE PROCEDURE apaga_Product();  
 
